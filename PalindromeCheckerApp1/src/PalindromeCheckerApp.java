@@ -1,9 +1,7 @@
-public class UseCase10PalindromeCheckerApp {
+class PalindromeChecker {
 
-    public static boolean isPalindrome(String word) {
-
-        // Normalize string: remove spaces and convert to lowercase
-        word = word.replaceAll("\\s+", "").toLowerCase();
+    // Method to check palindrome
+    public boolean checkPalindrome(String word) {
 
         int start = 0;
         int end = word.length() - 1;
@@ -20,12 +18,19 @@ public class UseCase10PalindromeCheckerApp {
 
         return true;
     }
+}
+
+public class PalindromeCheckerApp {
 
     public static void main(String[] args) {
 
-        String word = "Race Car";
+        String word = "madam";
 
-        if (isPalindrome(word)) {
+        PalindromeChecker checker = new PalindromeChecker();
+
+        boolean result = checker.checkPalindrome(word);
+
+        if (result) {
             System.out.println(word + " is a palindrome.");
         } else {
             System.out.println(word + " is not a palindrome.");
