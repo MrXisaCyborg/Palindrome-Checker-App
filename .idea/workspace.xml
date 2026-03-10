@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4439a20-7b6e-4089-afe2-a12b6913e8a3" name="Changes" comment="" />
+    <list default="true" id="f4439a20-7b6e-4089-afe2-a12b6913e8a3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/PalindromeCheckerApp1/src/PalindromeCheckerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/PalindromeCheckerApp1/src/PalindromeCheckerApp.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -25,6 +27,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.PalindromeCheckerApp.executor": "Run",
+    "Application.UseCase11PalindromeCheckerApp.executor": "Run",
     "Application.UseCase2PalindromeCheckerApp.executor": "Run",
     "Application.UseCase3PalindromeCheckerApp.executor": "Run",
     "Application.UseCase4PalindromeCheckerApp.executor": "Run",
@@ -35,7 +38,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "UC11",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Admin/Documents/RA2411030010310/Palindrome-Checker-App"
