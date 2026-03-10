@@ -1,15 +1,25 @@
-/*
-  This application is about palindrome checking
-  This stage includes start of the app
-  The goal is to develop a smooth application using java
-  @author Aadi Jain
-  @version 1.0
-*/
-
 public class PalindromeCheckerApp {
     public static void main(String[] args) {
-        System.out.println("Welcome to the Palindrome Checker System");
-        System.out.println("Version 1.0");
-        System.out.println("System Initialized Successfully.");
+        String word = "madam";
+
+        if (isPalindrome(word)) {
+            System.out.println(word + " is a palindrome.");
+        } else {
+            System.out.println(word + " is not a palindrome.");
+        }
+    }
+
+    public static boolean isPalindrome(String str) {
+        int left = 0;
+        int right = str.length() - 1;
+
+        while (left < right) {
+            if (str.charAt(left) != str.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
     }
 }
