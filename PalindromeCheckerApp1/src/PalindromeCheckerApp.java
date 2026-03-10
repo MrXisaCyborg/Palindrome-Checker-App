@@ -1,19 +1,33 @@
-public class PalindromeCheckerApp {
+import java.util.Stack;
+import java.util.Queue;
+import java.util.LinkedList;
+
+public class UseCase6PalindromeCheckerApp {
+
     public static void main(String[] args) {
+
         String word = "madam";
 
-        char[] chars = word.toCharArray();
-        int left = 0;
-        int right = chars.length - 1;
+        Stack<Character> stack = new Stack<>();
+        Queue<Character> queue = new LinkedList<>();
+
+        // Insert characters into both structures
+        for (int i = 0; i < word.length(); i++) {
+            stack.push(word.charAt(i));
+            queue.add(word.charAt(i));
+        }
+
         boolean isPalindrome = true;
 
-        while (left < right) {
-            if (chars[left] != chars[right]) {
+        // Compare stack pop and queue remove
+        while (!stack.isEmpty()) {
+            char fromStack = stack.pop();
+            char fromQueue = queue.remove();
+
+            if (fromStack != fromQueue) {
                 isPalindrome = false;
                 break;
             }
-            left++;
-            right--;
         }
 
         if (isPalindrome) {
